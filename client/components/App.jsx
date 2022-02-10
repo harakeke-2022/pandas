@@ -23,7 +23,7 @@ function App () {
   return (
     <>
       <div className='app'>
-        <h1>Fullstack Boilerplate - with Ingredients!</h1>
+        <h1 className='title'>Build-a-Burger</h1>
         <h2> Buns </h2>
         {buns.map(bun => {
           return (
