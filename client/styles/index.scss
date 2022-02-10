@@ -4,7 +4,19 @@
   font-family: "Fredoka One", cursive;
   font-weight: 500;
   font-size: 70px;
-  text-shadow: 4px 4px 6px blueviolet;
+  color: white;
+  text-shadow: 4px 4px 8px blueviolet;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: lightgreen
+}
+
+.header-font {
+  font-family: "Fredoka One", cursive;
+  font-size: 45px;
   display: flex;
   justify-content: center;
 }
