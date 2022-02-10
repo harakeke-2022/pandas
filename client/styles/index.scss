@@ -1,6 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-html, 
+.title {
+  font-family: "Fredoka One", cursive;
+  font-weight: 500;
+  font-size: 70px;
+  color: white;
+  text-shadow: 4px 4px 8px blueviolet;
+  display: flex;
+  justify-content: center;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  background-color: lightgreen
+}
+
+.header-font {
+  font-family: "Fredoka One", cursive;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
 }

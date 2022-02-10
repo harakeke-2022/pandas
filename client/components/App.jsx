@@ -23,36 +23,36 @@ function App () {
   return (
     <>
       <div className='app'>
-        <h1>Fullstack Boilerplate - with Ingredients!</h1>
-        <h2> Buns </h2>
+         <h1 className='title'>Build-a-Burger</h1>
+        <p className='header-font'>Bun</p>
         {buns.map(bun => {
           return (
             <Bun bun={bun.name} key={bun.id}/>
           )
         })
         }
-        <h2> Pattys </h2>
+         <p className='header-font'>Patty</p>
         {pattys.map(patty => {
           return (
             <Patty patty={patty.name} key={patty.id} />
           )
         })
         }
-        <h2> Toppings </h2>
+         <p className='header-font'>Toppings</p>
         {toppings.map(topping => {
           return (
             <Topping topping={topping.name} key={topping.id} />
           )
         })
         }
-        <h2> Cheeses </h2>
+         <p className='header-font'>Cheese</p>
         {cheeses.map(cheese => {
           return (
             <Cheese cheese={cheese.name} key={cheese.id} />
           )
         })
         }
-        <h2> Sauces </h2>
+        <p className='header-font'>Sauce</p>
         {sauces.map(sauce => {
           return (
             <Sauce sauce={sauce.name} key={sauce.id} />
