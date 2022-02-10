@@ -12,15 +12,13 @@ function App () {
 
   return (
     <>
-      <div className='app'>
-        <h1>Fullstack Boilerplate - with Ingredients!</h1>
+        <h1 className='title'>Build-a-Burger</h1>
         <ul>
           {ingredients.map(ingredient => (
             <li key={ingredient}>{ingredient}</li>
           ))}
         </ul>
-      </div>
-    </>
+   </>
   )
 }
 
