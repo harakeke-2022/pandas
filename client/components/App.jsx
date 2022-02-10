@@ -13,6 +13,7 @@ function App () {
   return (
     <>
       <h1 className='title'>Build-a-Burger</h1>
+      <img src='burger-1.jpg' alt="burgers"></img>
       <p className='header-font'>Bun</p>
       <p className='header-font'>Patty</p>
       <p className='header-font'>Toppings</p>
