@@ -29,6 +29,10 @@ function App () {
         <div className='flex-center'>
           <img src='main-header-burger.jpg' alt='burgers' className='header-burger'></img>
         </div>
+        <br></br>
+        <div className='font'>
+          <p>Feeling hungry? 🤤 Build your own burger below! 🍔</p>
+        </div>
 
         <p className='header-font'>Bun</p>
         <div className='img-row'>
@@ -51,14 +55,14 @@ function App () {
         </div>
 
         <p className='header-font'>Toppings</p>
-        <div className='toppings-row'>
+        <div className='img-row'>
           {toppings.map(topping => {
             return (
               <Topping topping={topping} key={topping.id} />
             )
           })
           }
-        </div>
+        </div>evenly
 
         <p className='header-font'>Cheese</p>
         <div className='img-row'>

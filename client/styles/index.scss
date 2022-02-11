@@ -44,15 +44,10 @@ body {
 .img-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-}
-
-.toppings-row {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 
 .footer {
   font-family: "Fredoka One", cursive;
@@ -94,6 +89,7 @@ body {
   width: 200px;
   height: 200px;
   flex-basis: 25%;
+  margin: 20px;
   // display: flex;
   // flex-direction: row;
   // flex-wrap: wrap;
