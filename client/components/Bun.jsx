@@ -3,23 +3,22 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addToCart } from '../actions'
 
 function Bun (props) {
-
   const dispatch = useDispatch()
   const yourBurger = useSelector(state => state.cart)
   const bunsInCart = yourBurger.filter(ingredient => ingredient.type === 'bun')
   const bunn = props.bun
   function handleClick () {
-    if (bunsInCart.length < 1) { dispatch(addToCart(bunn)) } else { alert('You can only have one bun you greedy pig!') }
+    if (bunsInCart.length < 3) { dispatch(addToCart(bunn)) } else { alert('You can only have one bun you greedy pig!') }
     // console.log('clicked')
   }
   return (
-  <>
-    <p>
+    <>
+      <p>
+        {props.bun.name}
+        <img src={`images/bun/${props.bun.name}.jpg` } onClick={handleClick} alt='buns'/>
+      </p>
       {props.bun.name}
-      <img src={`images/bun/${props.bun.name}.jpg`} alt='buns'/>
-    </p>
-      {props.bun.name}<button onClick={handleClick}>Add</button>
-  </>
+    </>
   )
 }
 

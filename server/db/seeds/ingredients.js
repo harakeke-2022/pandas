@@ -28,7 +28,7 @@ exports.seed = function (knex) {
         { id: 22, name: 'provolone', type: 'cheese', price: '2.0' },
         { id: 23, name: 'brie', type: 'cheese', price: '2.0' },
         { id: 24, name: 'swiss', type: 'cheese', price: '2.0' },
-        { id: 25, name: 'tomato sauce', type: 'cheese', price: '0' },
+        { id: 25, name: 'tomato sauce', type: 'sauce', price: '0' },
         { id: 26, name: 'mayo', type: 'sauce', price: '0' },
         { id: 27, name: 'sriracha mayo', type: 'sauce', price: '0.5' },
         { id: 28, name: 'bbq', type: 'sauce', price: '0' },
