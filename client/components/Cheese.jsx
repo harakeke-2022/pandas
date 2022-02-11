@@ -8,15 +8,14 @@ function Cheese (props) {
   const cheesesInCart = yourBurger.filter(ingredient => ingredient.type === 'cheese')
   const cheesen = props.cheese
   function handleClick () {
-    if (cheesesInCart.length < 3) { dispatch(addToCart(cheesen)) } else { alert('You can only have three cheeses you greedy pig!') }
+    if (cheesesInCart.length < 2) { dispatch(addToCart(cheesen)) } else { alert('You can only have two cheeses you greedy pig!') }
     // console.log('clicked')
   }
   return (
     <>
       <p className='font'>
-        {props.cheese.name}
         <img src={`images/cheese/${props.cheese.name}.jpg` } onClick={handleClick} alt='cheeses' className='body-image'/>
-      {props.cheese.name}
+        <br></br><br></br>{props.cheese.name}
       </p>
     </>
   )
