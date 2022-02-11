@@ -6,15 +6,15 @@ function Topping (props) {
   // console.log(props.topping)
   return (
     <>
-    <p className='font'>
-      {props.topping.name}
-      <img src={`images/topping/${props.topping.name}.jpg`} alt='topping' className='body-image'/>
-    </p>
-    <div className = 'font'>
-      {props.topping.name}<button onClick={handleClick}>Add</button>
+      <p className='font'>
+        {props.topping.name}
+        <img src={`images/topping/${props.topping.name}.jpg`} alt='topping' className='body-image'/>
+      </p>
+      <div className = 'font'>
+        {props.topping.name}<button onClick={handleClick}>Add</button>
       </div>
-  </>
+    </>
   )
-  }
+}
 
 export default Topping
