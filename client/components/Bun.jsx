@@ -3,10 +3,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchIngredients } from '../actions'
 
 function Bun (props) {
+  // const bunName = props.bun.name
   return (
-    <ul>
-      <li>{props.bun}</li>
-    </ul>
+    <p>
+      {props.bun.name}
+      <img src={`images/bun/${props.bun.name}.jpg`} alt='buns'/>
+    </p>
   )
 }
 
