@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchIngredients } from '../actions'
 
 function Topping (props) {
-  console.log(props.topping)
+  // console.log(props.topping)
   return (
     <ul>
       <li>{props.topping}</li>
