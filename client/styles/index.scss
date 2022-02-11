@@ -10,19 +10,38 @@
   justify-content: center;
 }
 
+.font {
+  font-size: 20px;
+  color: white
+}
+
 body {
-  background-color: lightgreen
+  background-color: black
 }
 
 .header-font {
   font-family: "Fredoka One", cursive;
   font-size: 45px;
+  color: white;
   display: flex;
   justify-content: center;
 }
 
 .header-burger {
-  width: 700px;
-  height: 350px;
-  object-fit: cover;
+  width: 1000px;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.body-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // justify-content: space-around;
+  // align-items: center;
 }

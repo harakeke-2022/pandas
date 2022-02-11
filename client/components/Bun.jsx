@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addToCart } from '../actions'
 
 function Bun (props) {
-
   const dispatch = useDispatch()
   const yourBurger = useSelector(state => state.cart)
   const bunsInCart = yourBurger.filter(ingredient => ingredient.type === 'bun')
@@ -13,13 +12,15 @@ function Bun (props) {
     // console.log('clicked')
   }
   return (
-  <>
-    <p>
-      {props.bun.name}
-      <img src={`images/bun/${props.bun.name}.jpg`} alt='buns'/>
-    </p>
-      {props.bun.name}<button onClick={handleClick}>Add</button>
-  </>
+    <>
+      <p className='font'>
+        {props.bun.name}
+        <img src={`images/bun/${props.bun.name}.jpg`} className='body-image' alt='buns'/>
+      </p>
+      <div className='font'>
+        {props.bun.name}<button onClick={handleClick}>Add</button>
+      </div>
+    </>
   )
 }
 
