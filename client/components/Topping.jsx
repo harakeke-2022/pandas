@@ -9,18 +9,16 @@ function Topping (props) {
   const toppingsInCart = yourBurger.filter(ingredient => ingredient.type === 'topping')
   const toppingn = props.topping
   function handleClick () {
-    if (toppingsInCart.length < 8) { dispatch(addToCart(toppingn)) } else { alert('You can only have one topping you greedy pig!') }
+    if (toppingsInCart.length < 8) { dispatch(addToCart(toppingn)) } else { alert('You can only have eight toppings you greedy pig!') }
     // console.log('clicked')
   }
   return (
     <>
       <p className='font'>
-        {props.topping.name}
         <img src={`images/topping/${props.topping.name}.jpg` } onClick={handleClick} alt='toppings' className='body-image'/>
-      
-      {props.topping.name} </p>
+        <br></br><br></br>{props.topping.name} </p>
     </>
   )
-  }
+}
 
 export default Topping

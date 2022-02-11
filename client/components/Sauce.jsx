@@ -14,11 +14,10 @@ function Sauce (props) {
   return (
     <>
       <p className='font'>
-        {props.sauce.name}
+
         <img src={`images/sauce/${props.sauce.name}.jpg` } onClick={handleClick} alt='sauces' className='body-image'/>
-    
-      {props.sauce.name}
-     </p> </>
+        <br></br><br></br>{props.sauce.name} <br></br><br></br> <br></br><br></br>
+      </p> </>
   )
 }
 export default Sauce

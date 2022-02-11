@@ -26,43 +26,59 @@ function App () {
       <div className='app'>
         <h1 className='title'>Build-a-Burger</h1>
 
-        <img src='main-header-burger.jpg' alt='burgers' className='header-burger'></img>
+        <div className='flex-center'>
+          <img src='main-header-burger.jpg' alt='burgers' className='header-burger'></img>
+        </div>
 
         <p className='header-font'>Bun</p>
-        {buns.map(bun => {
-          return (
-            <Bun bun={bun} key={bun.id}/>
-          )
-        })
-        }
+        <div className='img-row'>
+          {buns.map(bun => {
+            return (
+              <Bun bun={bun} key={bun.id}/>
+            )
+          })
+          }
+        </div>
+
         <p className='header-font'>Patty</p>
-        {pattys.map(patty => {
-          return (
-            <Patty patty={patty} key={patty.id} />
-          )
-        })
-        }
+        <div className='img-row'>
+          {pattys.map(patty => {
+            return (
+              <Patty patty={patty} key={patty.id} />
+            )
+          })
+          }
+        </div>
+
         <p className='header-font'>Toppings</p>
-        {toppings.map(topping => {
-          return (
-            <Topping topping={topping} key={topping.id} />
-          )
-        })
-        }
+        <div className='toppings-row'>
+          {toppings.map(topping => {
+            return (
+              <Topping topping={topping} key={topping.id} />
+            )
+          })
+          }
+        </div>
+
         <p className='header-font'>Cheese</p>
-        {cheeses.map(cheese => {
-          return (
-            <Cheese cheese={cheese} key={cheese.id} />
-          )
-        })
-        }
+        <div className='img-row'>
+          {cheeses.map(cheese => {
+            return (
+              <Cheese cheese={cheese} key={cheese.id} />
+            )
+          })
+          }
+        </div>
+
         <p className='header-font'>Sauce</p>
-        {sauces.map(sauce => {
-          return (
-            <Sauce sauce={sauce} key={sauce.id} />
-          )
-        })
-        }
+        <div className='img-row'>
+          {sauces.map(sauce => {
+            return (
+              <Sauce sauce={sauce} key={sauce.id} />
+            )
+          })
+          }
+        </div>
       </div>
       <div className='footer'>
         <Cart />
