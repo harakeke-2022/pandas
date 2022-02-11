@@ -12,15 +12,15 @@ function Bun (props) {
     // console.log('clicked')
   }
   return (
-    <>
-      <p className='font'>
-        {props.bun.name}
-        <img src={`images/bun/${props.bun.name}.jpg`} className='body-image' alt='buns'/>
-      </p>
-      <div className='font'>
-        {props.bun.name}<button onClick={handleClick}>Add</button>
+  <>
+    <p className='font'>
+      {props.bun.name}
+      <img src={`images/bun/${props.bun.name}.jpg`} alt='buns' className='body-image'/>
+    </p>
+    <div className = 'font'>
+      {props.bun.name}<button onClick={handleClick}>Add</button>
       </div>
-    </>
+  </>
   )
 }
 

@@ -5,10 +5,16 @@ import { fetchIngredients } from '../actions'
 function Topping (props) {
   // console.log(props.topping)
   return (
-    <ul>
-      <li>{props.topping}</li>
-    </ul>
+    <>
+    <p className='font'>
+      {props.topping.name}
+      <img src={`images/topping/${props.topping.name}.jpg`} alt='topping' className='body-image'/>
+    </p>
+    <div className = 'font'>
+      {props.topping.name}<button onClick={handleClick}>Add</button>
+      </div>
+  </>
   )
-}
+  }
 
 export default Topping
