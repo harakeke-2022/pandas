@@ -8,19 +8,17 @@ function Bun (props) {
   const bunsInCart = yourBurger.filter(ingredient => ingredient.type === 'bun')
   const bunn = props.bun
   function handleClick () {
-    if (bunsInCart.length < 1) { dispatch(addToCart(bunn)) } else { alert('You can only have one bun you greedy pig!') }
+    if (bunsInCart.length < 3) { dispatch(addToCart(bunn)) } else { alert('You can only have one bun you greedy pig!') }
     // console.log('clicked')
   }
   return (
-  <>
-    <p className='font'>
-      {props.bun.name}
-      <img src={`images/bun/${props.bun.name}.jpg`} alt='buns' className='body-image'/>
-    </p>
-    <div className = 'font'>
-      {props.bun.name}<button onClick={handleClick}>Add</button>
-      </div>
-  </>
+    <>
+      <p className='font'>
+        {props.bun.name}
+        <img src={`images/bun/${props.bun.name}.jpg` } onClick={handleClick} alt='buns' className='body-image'/>
+      
+      {props.bun.name} </p>
+    </>
   )
 }
 
