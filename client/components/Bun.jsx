@@ -14,12 +14,15 @@ function Bun (props) {
   }
   return (
   <>
-    <p>
+    <p className='font'>
       {props.bun.name}
-      <img src={`images/bun/${props.bun.name}.jpg`} alt='buns'/>
+      <img src={`images/bun/${props.bun.name}.jpg`} alt='buns' className='body-image'/>
     </p>
+    <div className = 'font'>
       {props.bun.name}<button onClick={handleClick}>Add</button>
+      </div>
   </>
+
   )
 }
 
