@@ -25,6 +25,9 @@ function App () {
     <>
       <div className='app'>
         <h1 className='title'>Build-a-Burger</h1>
+
+        <img src='main-header-burger.jpg' alt='burgers' className='header-burger'></img>
+
         <p className='header-font'>Bun</p>
         {buns.map(bun => {
           return (
