@@ -5,9 +5,11 @@ import { addToCart } from '../actions'
 function Bun (props) {
 
   const dispatch = useDispatch()
+  const yourBurger = useSelector(state => state.cart)
+  const bunsInCart = yourBurger.filter(ingredient => ingredient.type === 'bun')
   const bunn = props.bun
   function handleClick () {
-    dispatch(addToCart(bunn))
+    if (bunsInCart.length < 1) { dispatch(addToCart(bunn)) } else { alert('You can only have one bun you greedy pig!') }
     // console.log('clicked')
   }
   return (
