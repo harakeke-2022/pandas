@@ -8,11 +8,10 @@ function Cart () {
 
   return (
     <>
-      <p>Your Burger:{yourBurger.map(ingredient => (
-        <li key={ingredient}>{ingredient.name}</li>
+      <p className='textclass'>Your Burger: </p>{yourBurger.map(ingredient => (
+        <span key={ingredient}><img src={`images/${ingredient.type}/${ingredient.name}.jpg`} className='tinyimg' ></img></span>
       ))}
-      </p><br></br>
-      <p>Price: ${
+      <p className='textclass'>Price: ${
         priceArr.length > 0
           ? priceArr.reduce(function (previousValue, currentValue) {
             return previousValue + currentValue

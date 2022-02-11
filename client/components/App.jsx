@@ -38,33 +38,33 @@ function App () {
         <p className='header-font'>Patty</p>
         {pattys.map(patty => {
           return (
-            <Patty patty={patty.name} key={patty.id} />
+            <Patty patty={patty} key={patty.id} />
           )
         })
         }
         <p className='header-font'>Toppings</p>
         {toppings.map(topping => {
           return (
-            <Topping topping={topping.name} key={topping.id} />
+            <Topping topping={topping} key={topping.id} />
           )
         })
         }
         <p className='header-font'>Cheese</p>
         {cheeses.map(cheese => {
           return (
-            <Cheese cheese={cheese.name} key={cheese.id} />
+            <Cheese cheese={cheese} key={cheese.id} />
           )
         })
         }
         <p className='header-font'>Sauce</p>
         {sauces.map(sauce => {
           return (
-            <Sauce sauce={sauce.name} key={sauce.id} />
+            <Sauce sauce={sauce} key={sauce.id} />
           )
         })
         }
       </div>
-      <div>
+      <div className='footer'>
         <Cart />
       </div>
     </>
