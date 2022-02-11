@@ -1,6 +1,7 @@
 import { getIngredients } from '../apis/ingredients'
 
 export const SET_INGREDIENTS = 'SET_INGREDIENTS'
+export const ADD_TO_CART = 'ADD_TO_CART'
 
 export function setIngredients (ingredients) {
   return {
@@ -14,8 +15,16 @@ export function fetchIngredients () {
     return getIngredients()
       .then(ingredients => {
         dispatch(setIngredients(ingredients))
-        console.log(ingredients)
+        // console.log(ingredients)
         return null
       })
+  }
+}
+
+export function addToCart (ingredient) {
+  // console.log(ingredient)
+  return {
+    type: ADD_TO_CART,
+    ingredient
   }
 }
