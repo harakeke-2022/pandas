@@ -13,13 +13,13 @@ function Patty (props) {
   }
   return (
     <>
-      <p>
+      <p className='font'>
         {props.patty.name}
-        <img src={`images/patty/${props.patty.name}.jpg` } onClick={handleClick} alt='pattys'/>
-      </p>
-      {props.patty.name}
+        <img src={`images/patty/${props.patty.name}.jpg` } onClick={handleClick} alt='pattys' className='body-image'/>
+      {props.patty.name}  </p>
     </>
   )
 }
 
 export default Patty
+

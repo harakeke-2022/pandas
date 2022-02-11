@@ -14,13 +14,13 @@ function Topping (props) {
   }
   return (
     <>
-      <p>
+      <p className='font'>
         {props.topping.name}
-        <img src={`images/topping/${props.topping.name}.jpg` } onClick={handleClick} alt='toppings'/>
-      </p>
-      {props.topping.name}
+        <img src={`images/topping/${props.topping.name}.jpg` } onClick={handleClick} alt='toppings' className='body-image'/>
+      
+      {props.topping.name} </p>
     </>
   )
-}
+  }
 
 export default Topping

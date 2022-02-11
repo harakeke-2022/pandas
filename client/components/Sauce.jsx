@@ -13,12 +13,12 @@ function Sauce (props) {
   }
   return (
     <>
-      <p>
+      <p className='font'>
         {props.sauce.name}
-        <img src={`images/sauce/${props.sauce.name}.jpg` } onClick={handleClick} alt='sauces'/>
-      </p>
+        <img src={`images/sauce/${props.sauce.name}.jpg` } onClick={handleClick} alt='sauces' className='body-image'/>
+    
       {props.sauce.name}
-    </>
+     </p> </>
   )
 }
 export default Sauce

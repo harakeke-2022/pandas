@@ -13,11 +13,11 @@ function Cheese (props) {
   }
   return (
     <>
-      <p>
+      <p className='font'>
         {props.cheese.name}
-        <img src={`images/cheese/${props.cheese.name}.jpg` } onClick={handleClick} alt='cheeses'/>
-      </p>
+        <img src={`images/cheese/${props.cheese.name}.jpg` } onClick={handleClick} alt='cheeses' className='body-image'/>
       {props.cheese.name}
+      </p>
     </>
   )
 }

@@ -13,11 +13,11 @@ function Bun (props) {
   }
   return (
     <>
-      <p>
+      <p className='font'>
         {props.bun.name}
-        <img src={`images/bun/${props.bun.name}.jpg` } onClick={handleClick} alt='buns'/>
-      </p>
-      {props.bun.name}
+        <img src={`images/bun/${props.bun.name}.jpg` } onClick={handleClick} alt='buns' className='body-image'/>
+      
+      {props.bun.name} </p>
     </>
   )
 }
