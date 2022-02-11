@@ -8,6 +8,7 @@ import Patty from './Patty'
 import Topping from './Topping'
 import Cheese from './Cheese'
 import Sauce from './Sauce'
+import Cart from './Cart'
 
 function App () {
   const pattys = useSelector(state => state.ingredients.filter(ingredient => ingredient.type === 'patty'))
@@ -24,7 +25,9 @@ function App () {
     <>
       <div className='app'>
         <h1 className='title'>Build-a-Burger</h1>
+
         <img src='main-header-burger.jpg' alt='burgers' className='header-burger'></img>
+
         <p className='header-font'>Bun</p>
         {buns.map(bun => {
           return (
@@ -60,6 +63,9 @@ function App () {
           )
         })
         }
+      </div>
+      <div>
+        <Cart />
       </div>
     </>
   )
