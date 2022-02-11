@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addToCart } from '../actions'
 
 function Bun (props) {
-
   const dispatch = useDispatch()
   const yourBurger = useSelector(state => state.cart)
   const bunsInCart = yourBurger.filter(ingredient => ingredient.type === 'bun')
@@ -22,7 +21,6 @@ function Bun (props) {
       {props.bun.name}<button onClick={handleClick}>Add</button>
       </div>
   </>
-
   )
 }
 
